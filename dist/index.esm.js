@@ -1,11 +1,11 @@
 /*!
-* deep-clone 0.0.1
+* deep-clone-mini 0.0.1-alpha-1
 * Licensed under MIT
 */
 
 import _Array$isArray from '@babel/runtime-corejs2/core-js/array/is-array';
 
-var _require = require('./type'),
+var _require = require('./type.js'),
   type = _require.type;
 function deepClone(data) {
   if (data === null || type(data) !== 'object' && type(data) !== 'array') {

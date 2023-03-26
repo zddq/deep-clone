@@ -1,5 +1,5 @@
 /*!
-* deep-clone 0.0.1
+* deep-clone-mini 0.0.1-alpha-1
 * Licensed under MIT
 */
 
@@ -9,7 +9,7 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 
 var _Array$isArray = _interopDefault(require('@babel/runtime-corejs2/core-js/array/is-array'));
 
-var _require = require('./type'),
+var _require = require('./type.js'),
   type = _require.type;
 function deepClone(data) {
   if (data === null || type(data) !== 'object' && type(data) !== 'array') {

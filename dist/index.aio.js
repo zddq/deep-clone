@@ -1,17 +1,18 @@
 /*!
-* deep-clone 0.0.1
+* deep-clone-mini 0.0.1-alpha-1
 * Licensed under MIT
 */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('@babel/runtime-corejs2/core-js/array/is-array')) :
-  typeof define === 'function' && define.amd ? define(['@babel/runtime-corejs2/core-js/array/is-array'], factory) :
-  (factory(global._Array$isArray));
-}(this, (function (_Array$isArray) { 'use strict';
+    typeof define === 'function' && define.amd ? define(['@babel/runtime-corejs2/core-js/array/is-array'], factory) :
+      (factory(global._Array$isArray));
+}(this, (function (_Array$isArray) {
+  'use strict';
 
   _Array$isArray = _Array$isArray && _Array$isArray.hasOwnProperty('default') ? _Array$isArray['default'] : _Array$isArray;
 
-  var _require = require('./type'),
+  var _require = require('./type.js'),
     type = _require.type;
   function deepClone(data) {
     if (data === null || type(data) !== 'object' && type(data) !== 'array') {
