@@ -1,13 +1,15 @@
 {
   "name": "deep-clone-mini",
-  "version": "0.0.1-alpha-1",
+  "version": "0.0.1-alpha-2",
   "description": "实现 JavaScript 引用类型数据的深拷贝功能",
   "keywords": [],
   "files": ["/dist", "LICENSE"],
   "sideEffects": false,
   "author": "DEVELOPER",
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "browser":"dist/index.aio.js",
   "scripts": {
     "test": "cross-env NODE_ENV=test nyc mocha",
     "testp": "node test/browser/puppeteer.js",
@@ -37,6 +39,10 @@
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-commonjs": "^8.3.0",
     "rollup-plugin-node-resolve": "^3.0.3"
+  },
+  "homepage": "https://github.com/zddq/deep-clone.git#readme",
+  "bugs": {
+    "url":"https://github.com/zddq/deep-clone/issues"
   },
   "publishConfig": {
     "registry":"https://registry.npmjs.org",
