@@ -1,6 +1,6 @@
 {
-  "name": "deep-clone",
-  "version": "0.0.1",
+  "name": "deep-clone-mini",
+  "version": "0.0.1-alpha-1",
   "description": "实现 JavaScript 引用类型数据的深拷贝功能",
   "keywords": [],
   "files": ["/dist", "LICENSE"],
@@ -37,5 +37,9 @@
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-commonjs": "^8.3.0",
     "rollup-plugin-node-resolve": "^3.0.3"
+  },
+  "publishConfig": {
+    "registry":"https://registry.npmjs.org",
+    "access":"public"
   }
 }

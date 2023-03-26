@@ -1,5 +1,5 @@
 /*!
-* deep-clone 1.0.0
+* deep-clone 0.0.1
 * Licensed under MIT
 */
 
